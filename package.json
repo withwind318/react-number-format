@@ -75,6 +75,8 @@
     "react-dom": "^0.14 || ^15.0.0-rc || ^15.0.0 || ^16.0.0-rc || ^16.0.0"
   },
   "dependencies": {
-    "prop-types": "^15.6.0"
+    "native-base": "^2.3.3",
+    "prop-types": "^15.6.0",
+    "react-native": "^0.50.4"
   }
 }

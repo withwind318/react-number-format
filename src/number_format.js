@@ -15,6 +15,17 @@ import {
   setCaretPosition
 } from './utils';
 
+import {
+  StyleSheet,
+  View,
+  Text,
+  ScrollView,
+  Platform,
+  Dimensions,
+  TouchableWithoutFeedback,
+  TextInput,
+} from 'react-native';
+
 
 const propTypes = {
   thousandSeparator: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([true])]),
@@ -765,7 +776,7 @@ class NumberFormat extends React.Component {
     })
 
     if( displayType === 'text'){
-      return renderText ? (renderText(value) || null) : <span {...otherProps}>{value}</span>;
+      return renderText ? (renderText(value) || null) : <Text {...otherProps}>{value}</Text>;
     }
 
     else if (customInput) {
@@ -778,7 +789,7 @@ class NumberFormat extends React.Component {
     }
 
     return (
-      <input
+      <TextInput
         {...inputProps}
       />
     )
